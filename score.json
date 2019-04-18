@@ -1,0 +1,170 @@
+{
+    "type": "APL",
+    "version": "1.0",
+    "theme": "dark",
+    "import": [],
+    "resources": [],
+    "styles": {},
+    "layouts": {},
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "items": [
+            {
+                "description": "Container for Small Hub",
+                "when": "${viewport.shape == 'round'}",
+                "type": "Container",
+                "width": "100vw",
+                "height": "100vh",
+                "alignItems": "center",
+                "justifyContent": "center",
+                "direction": "row",
+                "items":[
+                    {
+                        "description": "Background Image, photo by Jorge Franganillo",
+                        "type": "Image",
+                        "source": "https://s3.amazonaws.com/year-progress-beta/score.jpg",
+                        "position": "absolute",
+                        "scale": "best-fill",
+                        "paddingLeft": "50vw",
+                        "width": "220vw",
+                        "height": "110vh",
+                        "filters": [
+                            {
+                                "type": "Blur",
+                                "radius": "0dp"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Container",
+                        "width": "55vw",
+                        "height": "55vw",
+                        "items":[
+                            {
+                                "type": "Frame",
+                                "backgroundColor": "rgb(0,0,0, 0.4)",
+                                "width": "100%",
+                                "height": "100%",
+                                "borderRadius": "150",
+                                "item":[
+                                    {
+                                        "type": "Container",
+                                        "width": "100%",
+                                        "height": "100%",
+                                        "direction": "column",
+                                        "alignItems": "center",
+                                        "justifyContent": "center",
+                                        "items": [
+                                            {
+                                            "type": "Text",
+                                            "text": "Your score is",
+                                            "textAlign": "center",
+                                            "opacity": "0.6",
+                                            "fontSize": "20",
+                                            "color": "white"
+                                            },
+                                           {
+                                            "type": "Text",
+                                            "text": "100",
+                                            "textAlign": "center",
+                                            "fontSize": "70",
+                                            "opacity": "0.9",
+                                            "color": "white"
+                                            },
+                                            {
+                                            "type": "Text",
+                                            "text": "points",
+                                            "textAlign": "center",
+                                            "opacity": "0.6",
+                                            "fontSize": "20",
+                                            "color": "white"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "description": "Container for Medium Hub, Large Hub, Extra Large TV",
+                "type": "Container",
+                "width": "100vw",
+                "height": "100vh",
+                "alignItems": "center",
+                "direction": "row",
+                "items":[
+                    {
+                        "description": "Background Image",
+                        "type": "Image",
+                        "source": "https://s3.amazonaws.com/year-progress-beta/score.jpg",
+                        "position": "absolute",
+                        "scale": "best-fill",
+                        "width": "100vw",
+                        "height": "100vh",
+                        "filters": [
+                            {
+                                "type": "Blur",
+                                "radius": "0dp"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Container",
+                        "width": "42vw",
+                        "height": "25vw",
+                        "paddingLeft": "10vw",
+                        "items":[
+                            {
+                                "type": "Frame",
+                                "backgroundColor": "rgb(0,0,0, 0.4)",
+                                "width": "100%",
+                                "height": "100%",
+                                "borderRadius": "25",
+                                "item":[
+                                    {
+                                        "type": "Container",
+                                        "width": "100%",
+                                        "height": "100%",
+                                        "direction": "column",
+                                        "alignItems": "center",
+                                        "justifyContent": "center",
+                                        "items": [
+                                            {
+                                            "type": "Text",
+                                            "text": "Your score is",
+                                            "textAlign": "center",
+                                            "opacity": "0.6",
+                                            "fontSize": "30",
+                                            "color": "white"
+                                            },
+                                           {
+                                            "type": "Text",
+                                            "text": "100",
+                                            "textAlign": "center",
+                                            "fontSize": "100",
+                                            "opacity": "0.9",
+                                            "color": "white"
+                                            },
+                                            {
+                                            "type": "Text",
+                                            "text": "points",
+                                            "textAlign": "center",
+                                            "opacity": "0.6",
+                                            "fontSize": "30",
+                                            "color": "white"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
